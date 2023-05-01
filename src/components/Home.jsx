@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import './Home.css'
 
 function Home() {
 
@@ -25,12 +26,11 @@ function Home() {
             setTotalSum(result.data)
         }
     }
-    
+
 
     return (
-        <div>
-            Home
-            <br />
+        <div className='home'>
+            <h1>Home</h1>
             <Link to="/profile">
                 <button>
                     Go to Profile
@@ -39,13 +39,13 @@ function Home() {
 
             <div>
                 <form onSubmit={getOutput}>
-                    <input type="number" value={a} onChange={(e) => setA(e.target.value)} /><br />
-                    <input type="number" value={b} onChange={(e) => setB(e.target.value)} /><br />
-                    <button type='submit'> Submit</button>
+                    <input className='input' type="number" value={a} onChange={(e) => setA(e.target.value)} /><br />
+                    <input className='input' type="number" value={b} onChange={(e) => setB(e.target.value)} /><br />
+                    <button className='button' type='submit'> ADD </button>
                 </form>
             </div>
 
-            <input type="text" value={TotalSum} />
+            <input className='output' type="number" value={TotalSum} readOnly/>
 
         </div>
     )

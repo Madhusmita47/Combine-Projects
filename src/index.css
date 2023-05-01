@@ -1,3 +1,12 @@
+/* @keyframes color {
+  0%   { background: #33CCCC; }
+  20%  { background: #33CC36; }
+  40%  { background: #B8CC33; }
+  60%  { background: #FCCA00; }
+  80%  { background: #33CC36; }
+  100% { background: #33CCCC; }
+} */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,7 +14,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(209, 200, 218);
+  background-image: url("https://wallpaperaccess.com/full/218607.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* animation: color 9s infinite linear; */
+
+  
 }
 
 code {

@@ -1,0 +1,24 @@
+.header {
+    background-color: rgba(240, 227, 227, 0.404);
+    height: 70px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header p {
+    font-size: 50px;
+    font-weight: bolder;
+    background: -webkit-linear-gradient( #e8a908, #0f0f0f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px black;
+    -webkit-box-shadow: -2px -1px 15px 7px rgba(0,0,0,0.5);
+    -moz-box-shadow: -3px -2px 30px 14px rgba(0,0,0,0.425);
+    box-shadow: -4px -3px 45px 21px rgba(0,0,0,1.35);
+    margin: 0;
+    padding: 2px 30px ;
+}
